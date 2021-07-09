@@ -12,8 +12,12 @@ struct ContentView: View {
     // it is a single type of View, not
     // any generic View
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            Form {
+                Text("Hello, world!")
+            }
+        }
+        .navigationBarTitle("SwiftUI")
     }
 }
 
