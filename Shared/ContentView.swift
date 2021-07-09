@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    // The `some` here constraints that
+    // it is a single type of View, not
+    // any generic View
     var body: some View {
         Text("Hello, world!")
             .padding()

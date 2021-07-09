@@ -24,6 +24,7 @@
 		9A55F10826989D4500475015 /* HWSWeSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HWSWeSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A55F10A26989D4500475015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A55F10B26989D4500475015 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		9A55F11A2698AC6C00475015 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +48,7 @@
 		9A55F0F326989D4400475015 = {
 			isa = PBXGroup;
 			children = (
+				9A55F11A2698AC6C00475015 /* README.md */,
 				9A55F0F826989D4400475015 /* Shared */,
 				9A55F10226989D4500475015 /* iOS */,
 				9A55F10926989D4500475015 /* macOS */,
