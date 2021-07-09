@@ -16,8 +16,8 @@ struct ContentView: View {
             Form {
                 Text("Hello, world!")
             }
+            .navigationBarTitle("SwiftUI", displayMode: .inline)
         }
-        .navigationBarTitle("SwiftUI")
     }
 }
 
