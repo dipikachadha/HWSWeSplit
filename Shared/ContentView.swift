@@ -13,6 +13,8 @@ struct ContentView: View {
     // is to add @State wrapper for simple properties.
     @State private var tapCount = 0
     @State private var name = ""
+    let students = ["Harry", "Hermione", "Ron"]
+    @State private var selectedStudent = "Harry"
 
     // The `some` here constraints that
     // it is a single type of View, not
@@ -32,6 +34,16 @@ struct ContentView: View {
                 // variable upon edits.
                 TextField("Enter your name", text: $name)
                 Text("Your name is \(name)")
+                
+                // Now for generating views in loops
+                // Use ForEach in this Picker:
+                Picker("Select your student", selection: $selectedStudent) {
+                    ForEach(0 ..< students.count) {
+                        Text(self.students[$0])
+                    }
+                }
+                Text("You chose: \(selectedStudent)")
+                
             }
             .navigationBarTitle("SwiftUI", displayMode: .inline)
             
