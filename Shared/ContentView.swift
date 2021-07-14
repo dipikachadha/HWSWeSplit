@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    // structs can be constants, so having
+    // mutable properties is a no go. The workaround
+    // is to add @State wrapper for simple properties.
+    @State private var tapCount = 0
+    
     // The `some` here constraints that
     // it is a single type of View, not
     // any generic View
