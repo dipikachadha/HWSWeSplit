@@ -20,8 +20,14 @@ struct ContentView: View {
         NavigationView {
             Form {
                 Text("Hello, world!")
+                
+                Button("Tap Count: \(tapCount)") {
+                    self.tapCount += 1
+                }
             }
             .navigationBarTitle("SwiftUI", displayMode: .inline)
+            
+
         }
     }
 }
